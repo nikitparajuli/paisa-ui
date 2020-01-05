@@ -23,7 +23,8 @@ const ContentStyle = {
 
 const FooterStyle = {
     fontSize: 10,
-    textAlign: 'center' as const
+    textAlign: 'center' as const,
+    background: '#ff8700'
 }
 
 export const AppLayout: React.FC<AppLayoutProps> = () => {
@@ -40,7 +41,9 @@ export const AppLayout: React.FC<AppLayoutProps> = () => {
                     An attempt to create a better payment and e-commerce platform for Nepal
                 </div>
             </Content>
-            <Footer style={FooterStyle}>Paisa ©2020 Nikit Parajuli</Footer>
+            <Footer style={FooterStyle}>
+                <div style={{color:  'white'}}>Paisa ©2020 Nikit Parajuli</div>
+            </Footer>
         </Layout>
     );
 }
